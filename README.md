@@ -6,7 +6,8 @@ Wykonane API umożliwia przeprowadzanie operacji CRUD na danych zawartych w bazi
 
 Kamil Zych, grupa: D601
 
-### Kontroler "BooksController":
+## Kontroler "BooksController":
+
 Kontroler wykorzystuje wzorzec repozytorium, aby oddzielić logikę dostępu do danych od logiki kontrolera. Kontroler obsługuje różne operacje HTTP na zasobach książek:
 
 - GET /api/books: Zwraca listę wszystkich książek.
@@ -16,7 +17,8 @@ Kontroler wykorzystuje wzorzec repozytorium, aby oddzielić logikę dostępu do 
 - PUT /api/books/{id}: Aktualizuje dane istniejącej książki.
 - DELETE /api/books/{id}: Usuwa książkę o podanym identyfikatorze.
 
-### Walidacja danych i obsługa błędów:
+## Walidacja danych i obsługa błędów:
+
 Aplikacja posiada podstawową weryfikację danych wprowadzanych przez użytkownika. 
 
 Model książki korzysta z wbudowanych atrybutów walidacyjnych, przykładowo właściwość "Author":
@@ -26,7 +28,8 @@ Model książki korzysta z wbudowanych atrybutów walidacyjnych, przykładowo w�
 public string? Author { get; set; }
 ```
 
-### Baza danych
+## Baza danych
+
 Baza danych składa się z jednej tabeli zbudowanej na podstawie modelu książki. 
 
 | Name          | Data type     |
@@ -47,7 +50,7 @@ Add-Migration Init
 Update-Database
 ```
 
-### Zrzuty ekranu:
+## Zrzuty ekranu:
 
 ![App Screenshot](BookshelfApi-Swagger-Example-1.png)
 
